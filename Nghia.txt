@@ -1,8 +1,0 @@
-CREATE FILE TEST
-
-Team List:
-1. Cameron Braun
-2.
-3. Now we got problems
-4.
-5.

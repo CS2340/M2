@@ -3,6 +3,6 @@ CREATE FILE TEST
 Team List:
 1. Cameron Braun
 2.
-3. Nghia Huynh
+3. Hello
 4.
 5.

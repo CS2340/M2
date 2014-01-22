@@ -1,5 +1,7 @@
 package edu.gatech.oad.antlab.person;
 
+import java.util.Random;
+
 /**
  *  A simple class for person 2
  *  returns their name and a
@@ -9,8 +11,11 @@ package edu.gatech.oad.antlab.person;
  * @version 1.1
  */
 public class Person2 {
+	public static void main(String[] args){
+		System.out.println(new Person2("Cameron").calc("Hello World!"));
+	}
     /** Holds the persons real name */
-    private String name;
+    private String name = "Cameron Braun";
 	 	/**
 	 * The constructor, takes in the persons
 	 * name
@@ -31,8 +36,26 @@ public class Person2 {
 	 */
 	private String calc(String input) {
 	  //Person 2 put your implementation here
-	  return null;
+		Random r = new Random();
+		char[] str = input.toCharArray();
+		char temp;
+		int rIndex;
+		for(int i = 0; i < input.length(); i++){
+			temp = str[i];
+			rIndex = r.nextInt(input.length());
+			str[i] = str[rIndex];
+			str[rIndex] = temp;
+			
+		}
+		String resString = "";
+		for(char c: str){
+			resString = resString + c;
+		}
+		return resString; //TODO
 	}
+	
+	
+	
 	/**
 	 * Return a string rep of this object
 	 * that varies with an input string

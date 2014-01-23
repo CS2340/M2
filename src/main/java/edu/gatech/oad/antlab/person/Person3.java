@@ -44,7 +44,16 @@ public class Person3 {
 	 */
 	private String calc(String input) {
 	  //Person 3 put your implementation here
+		// Return null when input is empty
+		if ( input.isEmpty()) return null;
 		
-	  return null;
+		String retString="";
+		for ( int i = input.length()  ; i > 0 ; i++)
+		{
+			retString = retString + input.charAt(i-1);
+		}
+		
+		return retString;
+		
 	}
 }

@@ -10,7 +10,7 @@ package edu.gatech.oad.antlab.person;
  */
 public class Person5 {
   /** Holds the persons real name */
-  private String name;
+  private String name = "Bryan Koo";
   	/**
 	 * The constructor, takes in the persons
 	 * name
@@ -31,7 +31,14 @@ public class Person5 {
 	 */
 	private String calc(String input) {
 	  //Person 5 put your implementation here
-	  return null;
+		char[] str = input.toCharArray();
+		String str1 = input.substring(0,2); //g 
+		System.out.println("str1 " + str1);
+		String str2 = input.substring(2);
+		System.out.println("str2 " + str2);
+		String newstr = str2 + str1;
+		System.out.println("newstr " + newstr);
+		return newstr; 
 	}
 	
 	/**
@@ -44,6 +51,10 @@ public class Person5 {
 	 */
 	public String toString(String input) {
 	  return name + calc(input);
+	}
+	public static void main(String[] args){
+		Person5 foo = new Person5("gtg123b"); 
+		System.out.println(foo.calc("gtg123b"));
 	}
 
 }

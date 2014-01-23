@@ -11,9 +11,6 @@ import java.util.Random;
  * @version 1.1
  */
 public class Person2 {
-	public static void main(String[] args){
-		System.out.println(new Person2("Cameron").calc("Hello World!"));
-	}
     /** Holds the persons real name */
     private String name = "Cameron Braun";
 	 	/**

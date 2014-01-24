@@ -12,10 +12,7 @@ package edu.gatech.oad.antlab.person;
 public class Person4 
 {
 	/** Holds the persons real name */
-	private String name = Jackson Millsaps;
-	
-	
-	
+	private String name;
 	
 	
 	/**
